@@ -10,7 +10,7 @@ const VERSION = JSON.stringify(require('./package.json').version).replace(/"/g, 
 
 const BANNER = `RapiPdf ${VERSION.replace()} - WebComponent to generate PDF from OpenAPI spec
 License: MIT
-Repo   : https://github.com/mrin9/RapiPdf
+Repo   : https://github.com/rapi-doc/RapiPdf
 Author : Mrinmoy Majumdar`;
 
 const commonPlugins = [

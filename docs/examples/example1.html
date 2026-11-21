@@ -1,68 +1,14 @@
 <!doctype html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <script type="text/javascript" src="../rapipdf-min.js"></script>
-    <style>
-      rapi-pdf{ display:none; }
-      .btn-default {
-        font-size: 16px;
-        padding: 6px 16px;
-        text-align: center;
-        white-space: nowrap;
-        background-color:orangered;
-        color:white;
-        border: 0px solid #333;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <rapi-pdf id="thedoc"> </rapi-pdf>
-    <button id="btn" class="btn-default" type="button">Generate PDF from JSON </button>    
-    <script>
-      var btnEl = document.getElementById("btn");
-      btnEl.addEventListener('click', (ev) => {
-        let docEl = document.getElementById("thedoc");
-        let strSpec = `
-        {
-          "swagger": "2.0",
-          "info": { "description": "Sample to test" },
-          "paths": {
-            "/pets": {
-              "get": {
-                "description": "Returns all pets from the system that the user has access to",
-                "produces" : [ "application/json"],
-                "responses": {
-                  "200": {
-                    "description": "A list of pets.",
-                    "schema": {
-                      "type" : "array",
-                      "items": { "$ref": "#/definitions/Pet"}
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "definitions": {
-            "Pet": {
-              "type": "object",
-              "properties": {
-                "id"  : { "type": "integer" },
-                "name": { "type": "string" },
-                "tag" : { "type": "string" }
-              }
-            }
-          }
-        }`;
-        let objSpec = JSON.parse(strSpec);
-        docEl.generatePdf(objSpec);
-      })
-    </script>
-    
-  </body>
-
-
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RapiPdf has moved to rapidocui.com</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://rapidocui.com/rapipdf/#demo">
+  <meta http-equiv="refresh" content="0; url=https://rapidocui.com/rapipdf/#demo">
+  <script>location.replace("https://rapidocui.com/rapipdf/#demo");</script>
+</head>
+<body>
+  <p>RapiPdf's documentation has moved to <a href="https://rapidocui.com/rapipdf/#demo">https://rapidocui.com/rapipdf/#demo</a>.</p>
+</body>
 </html>

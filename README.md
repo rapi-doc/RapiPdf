@@ -10,6 +10,8 @@
 # RapiPDF
 Custom element for Open-API to PDF generation
 
+> **RapiPdf has moved.** Its source is now [`packages/rapipdf`](https://github.com/rapi-doc/RapiDoc/tree/master/packages/rapipdf) in the RapiDoc repository, released from there to npm as `rapipdf` (3.x), and its documentation is at [rapidocui.com/rapipdf](https://rapidocui.com/rapipdf/). This repository keeps the 2.x history; new issues and pull requests go to [rapi-doc/RapiDoc](https://github.com/rapi-doc/RapiDoc/issues).
+
 ## Features
 - Supports Swagger 2.0 and OpenAPI 3.0
 - Generate PDF using Web-Component
@@ -18,7 +20,7 @@ Custom element for Open-API to PDF generation
 - Supported on Chrome, FireFox and Safari. (Not yet tested on Edge)
 
 ## Documentation
-[Check out the usage and examples](https://rapi-doc.github.io/RapiPdf/)
+[Usage, a live demo and the API reference](https://rapidocui.com/rapipdf/)
 
 ## Build Process
 We recommend `yarn` over `npm` as we use yarn [resolutions](https://yarnpkg.com/lang/en/docs/selective-version-resolutions/) to keep the bundle size smaller. As of this writing this feature is not supported in npm natively
